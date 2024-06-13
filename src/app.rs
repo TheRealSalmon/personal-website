@@ -9,17 +9,17 @@ pub fn App() -> impl IntoView {
       <Router>
         <div class="font-mono p-6 h-screen bg-zinc-300">
           <div class="p-6 h-full border-2 border-slate-400 border-solid">
-            <p class="text-6xl sm:text-3xl">"Sam Mun"</p>
-            <p class="text-xl sm:text-base">"Cheminformatics and"</p>
-            <p class="text-xl sm:text-base">"Computational Chemistry"</p>
-            <nav class="pt-6 flex flex-col">
-              <a class="text-xl sm:text-base hover:text-slate-600" href="/">
+            <p class="text-3xl">"Sam Mun"</p>
+            <p>"Cheminformatics and"</p>
+            <p>"Computational Chemistry"</p>
+            <nav class="pt-6 flex flex-col absolute top-32 left-12">
+              <a class="hover:text-slate-600" href="/">
                 "Home"
               </a>
-              <a class="text-xl sm:text-base hover:text-slate-600" href="/projects">
+              <a class="hover:text-slate-600" href="/projects">
                 "Projects"
               </a>
-              <a class="text-xl sm:text-base hover:text-slate-600" href="/contact">
+              <a class="hover:text-slate-600" href="/contact">
                 "Contact"
               </a>
             </nav>
@@ -37,7 +37,7 @@ pub fn App() -> impl IntoView {
 #[component]
 pub fn Home() -> impl IntoView {
     view! {
-      <p class="text-xl sm:text-sm w-36 absolute bottom-12 right-12">
+      <p class="text-sm w-36 absolute bottom-12 right-12">
         "
         Jack-of-all-trades with broad experience across computational drug
         discovery. Deep expertise in custom virtual screening workflows and
@@ -111,17 +111,13 @@ pub fn Contact() -> impl IntoView {
     view! {
       <nav class="flex flex-col text-right w-36 absolute bottom-12 right-12">
         <a
-          class="text-xl sm:text-sm hover:text-slate-600"
+          class="hover:text-slate-600"
           href="https://www.linkedin.com/in/therealsam/"
           target="_blank"
         >
           "LinkedIn"
         </a>
-        <a
-          class="text-xl sm:text-sm hover:text-slate-600"
-          href="https://github.com/TheRealSalmon"
-          target="_blank"
-        >
+        <a class="hover:text-slate-600" href="https://github.com/TheRealSalmon" target="_blank">
           "GitHub"
         </a>
       </nav>
