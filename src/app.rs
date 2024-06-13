@@ -50,7 +50,7 @@ pub fn Home() -> impl IntoView {
 #[component]
 pub fn Projects() -> impl IntoView {
     view! {
-      <div class="text-right w-3/6 h-5/6 no-scrollbar overflow-hidden overflow-y-auto overscroll-contain absolute top-16 right-12">
+      <div class="no-scrollbar text-right w-3/6 h-5/6 overflow-hidden overflow-y-auto overscroll-contain absolute top-16 right-12">
         <br/>
         <br/>
         <br/>
