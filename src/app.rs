@@ -27,13 +27,15 @@ pub fn App() -> impl IntoView {
                 "Blog"
               </a>
             </nav>
-            <Routes>
-              <Route path="/" view=Home/>
-              <Route path="/projects" view=Projects/>
-              <Route path="/contact" view=Contact/>
-              <Route path="/blog" view=Blog/>
-              <Route path="/blog/living-with-cancer" view=LivingWithCancer/>
-            </Routes>
+            <div class="no-scrollbar flex flex-col text-right text-slate-600 w-1/2 h-5/6 overflow-hidden overflow-y-auto overscroll-contain absolute top-16 right-12">
+              <Routes>
+                <Route path="/" view=Home/>
+                <Route path="/projects" view=Projects/>
+                <Route path="/contact" view=Contact/>
+                <Route path="/blog" view=Blog/>
+                <Route path="/blog/living-with-cancer" view=LivingWithCancer/>
+              </Routes>
+            </div>
           </div>
         </div>
       </Router>
