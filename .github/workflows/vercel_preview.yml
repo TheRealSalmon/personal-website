@@ -4,8 +4,9 @@
 name: Leptos CSR Vercel Preview
 
 on:
-  pull_request:
-    branches: [ "master" ]
+  push:
+    branches:
+      - dev
 
   workflow_dispatch:
 
