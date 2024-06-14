@@ -29,7 +29,7 @@ pub fn App() -> impl IntoView {
                 "Blog"
               </a>
             </nav>
-            <div class="no-scrollbar flex flex-col text-right text-slate-600 w-5/12 h-5/6 overflow-hidden overflow-y-auto overscroll-contain absolute top-16 right-12">
+            <div class="no-scrollbar text-right text-slate-600 w-5/12 h-5/6 overflow-hidden overflow-y-auto overscroll-contain absolute top-16 right-12">
               <Routes>
                 <Route path="/" view=Home/>
                 <Route path="/projects" view=Projects/>
