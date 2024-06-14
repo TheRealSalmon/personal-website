@@ -13,5 +13,5 @@ trunk serve
 
 ## Format with rustfmt and leptosfmt
 ```bash
-rustfmt ./**/*.rs && leptosfmt -t 2 ./**/*.rs
+cargo fmt && leptosfmt -t 2 ./**/*.rs
 ```
