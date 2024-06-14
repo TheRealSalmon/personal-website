@@ -80,6 +80,9 @@ jobs:
       - name: Build with Trunk
         run: ./trunk build --release
 
+      - name: Copy vercel.json
+        run: cp vercel.json dist/vercel.json
+
       - name: Preview Deploy
         id: preview
         uses: amondnet/vercel-action@v25.1.1
