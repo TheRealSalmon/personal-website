@@ -36,9 +36,6 @@ jobs:
       - name: Build with Trunk
         run: ./trunk build --release
 
-      - name: Copy vercel.json
-        run: cp vercel.json dist/vercel.json
-
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
 
