@@ -2,3 +2,4 @@
 /dist
 /style/output.css
 .vercel
+.DS_Store
