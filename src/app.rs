@@ -8,8 +8,8 @@ use leptos_router::*;
 pub fn App() -> impl IntoView {
     view! {
       <Router>
-        <div class="font-mono p-6 h-screen bg-zinc-300">
-          <div class="p-6 h-full border-2 border-slate-400 border-solid">
+        <div class="font-mono p-6 h-screen bg-gray-300">
+          <div class="p-6 h-full border-2 border-slate-400 border-solid bg-neutral-300">
             <p class="text-3xl">"Sam Mun"</p>
             <p>"Cheminformatics and"</p>
             <p>"Computational Chemistry"</p>
