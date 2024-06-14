@@ -82,7 +82,7 @@ pub fn Projects() -> impl IntoView {
 
         <p class="text-xl pt-4">"Learn Cheminformatics Interactively"</p>
         <a
-          class="text-sm hover:text-slate-600"
+          class="text-sm hover:text-slate-400"
           href="https://interactive-cheminformatics.streamlit.app"
           target="_blank"
         >
