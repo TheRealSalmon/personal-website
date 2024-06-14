@@ -43,12 +43,22 @@ pub fn Projects() -> impl IntoView {
       >
         "Link to GitHub Repo"
       </a>
+      <br/>
       <a
         class="text-sm hover:text-slate-400"
         href="https://molrs-book.vercel.app/index.html"
         target="_blank"
       >
         "Link to Book"
+      </a>
+
+      <p class="text-xl pt-4">"pertable, Periodic Table in Rust"</p>
+      <a
+        class="text-sm hover:text-slate-400"
+        href="https://github.com/molrs/pertable"
+        target="_blank"
+      >
+        "Link to GitHub Repo"
       </a>
 
       <p class="text-sm italic pt-16">"Academic Work"</p>
