@@ -56,7 +56,7 @@ pub fn Home() -> impl IntoView {
 #[component]
 pub fn Projects() -> impl IntoView {
     view! {
-      <div class="no-scrollbar text-right text-slate-600 w-3/6 h-5/6 overflow-hidden overflow-y-auto overscroll-contain absolute top-16 right-12">
+      <div class="no-scrollbar flex flex-col text-right text-slate-600 w-3/6 h-5/6 overflow-hidden overflow-y-auto overscroll-contain absolute top-16 right-12">
         <br/>
         <br/>
         <br/>
@@ -96,6 +96,13 @@ pub fn Projects() -> impl IntoView {
           target="_blank"
         >
           "Link to GitHub Repo"
+        </a>
+        <a
+          class="text-sm hover:text-slate-400"
+          href="https://molrs-book.vercel.app/index.html"
+          target="_blank"
+        >
+          "Link to Book"
         </a>
 
         <p class="text-sm italic pt-16">"Academic Work"</p>
