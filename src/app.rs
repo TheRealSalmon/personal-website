@@ -1,5 +1,3 @@
-#![allow(non_snake_case)]
-
 use crate::articles::*;
 use crate::home::Home;
 use leptos::*;
