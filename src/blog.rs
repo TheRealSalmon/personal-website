@@ -16,10 +16,7 @@ pub fn BlogRoutes() -> impl IntoView {
 #[component]
 pub fn Blog() -> impl IntoView {
     view! {
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <div class="h-28 sm:h-24"/>
       <p class="text-sm italic">"Articles"</p>
       <div class="flex flex-col space-y-8">
         <a href="/blog/watching-myself-recover">

@@ -3,10 +3,7 @@ use leptos::*;
 #[component]
 pub fn Projects() -> impl IntoView {
     view! {
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <div class="h-28 sm:h-24"/>
       <p class="text-sm italic">"Professional Work"</p>
 
       <p class="text-xl pt-4">"Virtual Screening Workflows (vina, openmm, amber) on AWS"</p>

@@ -5,10 +5,7 @@ use leptos::*;
 #[component]
 fn Article(title: String, date: String, lines: Vec<String>) -> impl IntoView {
     view! {
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <div class="h-28 sm:h-24"/>
       <p class="text-base italic">{&title}</p>
       <p class="text-sm italic">{&date}</p>
 
