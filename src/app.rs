@@ -1,5 +1,4 @@
-use crate::articles::*;
-use crate::blog::Blog;
+use crate::blog::BlogRoutes;
 use crate::contact::Contact;
 use crate::home::Home;
 use crate::projects::Projects;
@@ -34,8 +33,7 @@ pub fn App() -> impl IntoView {
                 <Route path="/" view=Home/>
                 <Route path="/projects" view=Projects/>
                 <Route path="/contact" view=Contact/>
-                <Route path="/blog" view=Blog/>
-                <Route path="/blog/living-with-cancer" view=LivingWithCancer/>
+                <BlogRoutes/>
               </Routes>
             </div>
           </div>

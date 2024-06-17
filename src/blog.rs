@@ -1,4 +1,16 @@
+use crate::articles::*;
 use leptos::*;
+use leptos_router::*;
+
+#[component(transparent)]
+pub fn BlogRoutes() -> impl IntoView {
+    view! {
+      <Route path="/blog" view=|| view! { <Outlet/> }>
+        <Route path="" view=Blog/>
+        <Route path="living-with-cancer" view=LivingWithCancer/>
+      </Route>
+    }
+}
 
 #[component]
 pub fn Blog() -> impl IntoView {
