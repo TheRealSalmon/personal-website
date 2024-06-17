@@ -20,6 +20,9 @@ jobs:
       - name: rust-toolchain
         uses: dtolnay/rust-toolchain@nightly
 
+      - name: rust-cache
+        uses: Swatinem/rust-cache@v2
+
       - name: rustup target add wasm32
         run: rustup target add wasm32-unknown-unknown
 
