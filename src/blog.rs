@@ -21,11 +21,13 @@ pub fn Blog() -> impl IntoView {
       <br/>
       <br/>
       <p class="text-sm italic">"Articles"</p>
-      <a href="/blog/watching-myself-recover">
-        <p class="text-xl pt-8 hover:text-slate-400">"June 17th 2024, Watching Myself Recover"</p>
-      </a>
-      <a href="/blog/living-with-cancer">
-        <p class="text-xl pt-8 hover:text-slate-400">"June 13th 2024, Living with Cancer"</p>
-      </a>
+      <div class="flex flex-col space-y-8">
+        <a href="/blog/watching-myself-recover">
+          <p class="text-xl hover:text-slate-400">"June 17th 2024, Watching Myself Recover"</p>
+        </a>
+        <a href="/blog/living-with-cancer">
+          <p class="text-xl hover:text-slate-400">"June 13th 2024, Living with Cancer"</p>
+        </a>
+      </div>
     }
 }
