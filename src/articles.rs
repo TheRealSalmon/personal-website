@@ -17,6 +17,17 @@ fn Article(title: String, date: String, lines: Vec<String>) -> impl IntoView {
 }
 
 #[component]
+pub fn IsItTheEnd() -> impl IntoView {
+    let lines: Vec<_> = include_str!("../articles/is-it-the-end.txt")
+        .split("\n\n")
+        .map(|s| s.to_string())
+        .collect();
+    view! {
+      <Article title="Is It the End?".to_string() date="August 11th, 2024".to_string() lines=lines/>
+    }
+}
+
+#[component]
 pub fn WatchingMyselfRecover() -> impl IntoView {
     let lines: Vec<_> = include_str!("../articles/watching-myself-recover.txt")
         .split("\n\n")
